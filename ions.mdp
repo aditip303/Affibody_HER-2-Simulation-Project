@@ -1,0 +1,6 @@
+; ions.mdp - Minimal MD parameter file for ion addition
+integrator  = steep    ; Algorithm (steep = steepest descent minimization)
+emtol       = 1000.0   ; Stop minimization when the max force < 1000.0 kJ/mol/nm
+nsteps      = 50000    ; Maximum number of minimization steps to perform
+energygrps  = Protein  ; Groups to write energies for
+
