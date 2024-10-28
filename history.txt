@@ -1,0 +1,371 @@
+    1  ls
+    2  cd folder
+    3  mkdir folder
+    4  wget https://github.com/nileshjchoudhary/T1/archive/refs/heads/main.zip
+    5  unzip main.zip
+    6  mkdir NVT NVE
+    7  ls
+    8  mkdir 24aug
+    9  ls
+   10  cd 24aug/
+   11  ls
+   12  unzip T1-main.zip 
+   13  mkdir NVE NVT
+   14  ls
+   15  vmd in.pdb
+   16  ls 
+   17  cd T1-main/
+   18  ls
+   19  cd NVT
+   20  ls
+   21  vmd in.pdb
+   22  cp ../nvt.mdp .
+   23  ls
+   24  vi nvt.mdp 
+   25  cp ../met.top
+   26  cp ../met.top .
+   27  vi nvt.mdp 
+   28  source/usr/local/gromacs/bin/GMXRC
+   29  ls
+   30  cd 24aug/
+   31  ls
+   32  cd T1-main/
+   33  cd nvt
+   34  cd NVT
+   35  source /usr/local/gromacs/bin/GMXRC
+   36  gmx grompp -p met.top -c in.pdb -f nvt.mdp -o vt.tpr
+   37  gmx
+   38  source /usr/local/gromacs/bin/GMXRC
+   39  gmx
+   40  gmx grompp -p met.top -c in.pdb -f nvt.mdp -o vt.tpr
+   41  cd..
+   42  ls
+   43  gmx mdrun -s vt.tpr -c nvtout.pdb
+   44  ls
+   45  gmx energy -f ener.edr  -o temp.xvg
+   46  vi pr.xvg
+   47  ls
+   48  gmx energy -f ener.edr  -o temp.xvg
+   49  clear
+   50  gmx energy -f ener.edr  -o temp.xvg
+   51  ls
+   52  gmx energy -f ener.edr  -o pr.xvg
+   53  ls
+   54  xmgrace temp.xvg pr.xvg 
+   55  xmgrace temp.xvg
+   56  8
+   57  ls
+   58  :q
+   59  q
+   60  wqsave
+   61  exit
+   62  ls
+   63  cd 24aug/
+   64  ls
+   65  cd T1-main/
+   66  ls
+   67  cd NVT
+   68  ls
+   69  xmgrace temp.xvg 
+   70  cd ..
+   71  cd NVE
+   72  ls
+   73  cp ../Nvt/nvtout.pdb .
+   74  ls
+   75  cp ../NVT/nvtout.pdb .
+   76  ls
+   77  cp ../NVT/state.cpt 
+   78  cp ../NVT/state.cpt ..
+   79  cp ../NVT/state.cpt .
+   80  ls
+   81  gmx dump -cp state.cpt 
+   82  ls
+   83  cp ../met.top .
+   84  cp ../nve.mdp .
+   85  ls
+   86  gmx grompp -p met.top -c nvtout.pdb -t state.
+   87  gmx grompp -p met.top -c nvtout.pdb -t state.cpt -o ve.tpr
+   88  gmx grompp -p met.top -c nvtout.pdb -t state.cpt -o ve.tpr.
+   89  gmx grompp -p met.top -c nvtout.pdb -f nve.mdp -t state.cpt -o ve.tpr
+   90  ls
+   91  gmx mdrun -s ve.tpr -c outnve.pdb
+   92  exit
+   93  ls
+   94  \cd 24aug
+   95  ls
+   96  cd T1-main/
+   97  ls
+   98  cd NVE
+   99  gmx mdrun -s ve.tpr -c outnve.pdb
+  100  gmx energy -f ener.edr -o z
+  101  xmgrace te
+  102  xmgrace temp.xvg
+  103  xmgrace z.xvg
+  104  gmx energy -f ener.edr -o te.xvg
+  105  xmgrace te.xvg
+  106  gmx trjconv -f traj.trr -s ve.tpr -o a.pdb -b 900 -e 1000
+  107  vmd a.pdb
+  108  history
+  109  clear
+  110  history
+  111  clear
+  112  ls
+  113  vi '1516 acid 1.csv'
+  114  ls
+  115  xmgrace acid\ uv.dat 
+  116  ls
+  117  xmgrace acid\ uv.dat 
+  118  vim '1516 basic 1.csv' 
+  119  lks
+  120  ls
+  121  xmgrace ' basic_uv.dat '
+  122  vim ' basic_uv.dat '
+  123  vim '1516 basic 1.csv' 
+  124  ls
+  125  vi '  basic_uv.data '
+  126  vi '  basic_uv.dat '
+  127  vim  '1516 buffer 1.csv' 
+  128  ls
+  129  vim '1516 buffer 1.csv' 
+  130  ls
+  131  vim ' bufferuv.dat' 
+  132  vi basic_uv.dat
+  133  vi bufferuv.dat 
+  134  vi 'acid uv.dat'
+  135  vi '1516 pure 1.csv' 
+  136  vi'1516 pure 1.csv' 
+  137  vim '1516 pure 1.csv'
+  138  ls
+  139  vi pure\ uv.dat 
+  140  xmgrace acid\ uv.dat 
+  141  ls
+  142  cd 1516/
+  143  ls
+  144  cd ../
+  145  ls
+  146  xmgrace acid\ uv.dat acidic\ fl\ .dat 
+  147  ls
+  148  xmgrace acid\ uv.dat acidic\ fl\ .dat 
+  149  xmgrace basic_uv.dat basic fl.dat
+  150  xmgrace basic_uv.dat basic fl.dat 
+  151  ls
+  152  ip
+  153  if conf
+  154  if config
+  155  xmgrace basic_uv.dat basic fl.dat 
+  156  xmgrace basic_uv.dat 'basic fl.dat' 
+  157  xmgrace basic_uv.dat 'basic fl.dat'  
+  158  xmgrace basic_uv.dat 'basic fl.dat' 
+  159  ls 
+  160  cd Downloads/
+  161  ls
+  162  vim 1516 acid 1.csv
+  163  vim 1516 acid 1.csv 
+  164  ls
+  165  vim  '1516 acid 1.csv 
+  166  '
+  167  vim '1516 acid 1.csv'  
+  168  eog fl_uv_acid.agr
+  169  eog fl_uv.agr
+  170  eog fl_uv.png
+  171  mv fl_uv.png fl_uv_base.png
+  172  eog fl_uv_base.png
+  173  source /usr/local/gromacs/bin/GMXRC
+  174  vi ~ /.bashrc
+  175  vi ~/.bashrc
+  176  gmx grompp -h
+  177  pymol 
+  178  mkdir water
+  179  cd water
+  180  mkdir tuto
+  181  cd tuto
+  182  cd ..
+  183  cd tuto
+  184  cd water
+  185  rm tuto
+  186  rmdir tuto
+  187  rmdir water
+  188  cd ..
+  189  rmdir water
+  190  mkdir tuto
+  191  cd tuto
+  192  mkdir water
+  193  cd water
+  194  gmx solvate -cs spc216.gro -box 3 3 3 -o sol.pdb
+  195  vi sol.pdb
+  196  pbc box
+  197  vi pbcbox
+  198  vmd sol.pdb 
+  199  gmx pdb2gmx -f sol.pdb -o conf.pdb -p
+  200  ls
+  201  history b
+  202  history > a
+  203  ls
+  204  rmdir a
+  205  RMDIR
+  206  rmdir a
+  207  rm a
+  208  ls
+  209  cp ../
+  210  cp ../T2-main/
+  211  ls
+  212  vi nvt,mdp
+  213  vi nvt.mdp 
+  214  gmx grompp -p topol.top -c conr
+  215  gmx mdrun -s vt.tpr -c nvt.pdb
+  216  mkdir NPT
+  217  cd NPT/
+  218  cp ../nvt.pdb .
+  219  cp ../nvt.mdp npt.mdp
+  220  ls
+  221  cp ..topol.top .
+  222  cp ../topol.top .
+  223  ls
+  224  vi npt.mdp 
+  225  ls
+  226  vi npt.mdp 
+  227  vi nvt.mdp 
+  228  vi npt.mdp 
+  229  ls
+  230  rm nvt.mdp 
+  231  ls
+  232  vi nab.pbc
+  233  ls
+  234  rm nab.pbc 
+  235  ls
+  236  gmx grompp -p topol.top -c nvt.pdb -f npt.mdp -o pt.tpor
+  237  gmx grompp -p topol.top -c nvt.pdb -f npt.mdp -o pt.tpr
+  238  vi npt.mdp 
+  239  gmx grompp -p topol.top -c nvt.pdb -f npt.mdp -o pt.tpr
+  240  ls
+  241  gmx grompp -p topol.top -c nvt.pdb -f npt.mdp -o pt.tpr
+  242  lsw
+  243  ls
+  244  gmx grompp -p topol.top -c nvt.pdb -f npt.mdp -o pt.tpr
+  245  vi npt.mdp 
+  246  gmx grompp -p topol.top -c nvt.pdb -f npt.mdp -o pt.tpr
+  247  gmx mdrun -s pt.tpr -c npt.pdb
+  248  gmx energy -f ener.edr -o density.xvg
+  249  xmgrace density.xvg 
+  250  exit
+  251  history 
+  252  cd tut
+  253  cd tuto
+  254  ls
+  255  cd 
+  256  cd tuto
+  257  cd water
+  258  xmgrace density.xvg 
+  259  cd NVT
+  260  cd NPT
+  261  xmgrace density.xvg 
+  262  LS
+  263  ls
+  264  vi npt.mdp 
+  265  gmx energy -f ener.edr -o density.xvg
+  266  vi npt.mdp 
+  267  gmx energy -f ener.edr -o density.xvg
+  268  history
+  269  history a
+  270  history > a
+  271  ls
+  272  cd T2-main/
+  273  unzip main.zip
+  274  cd
+  275  cd ..
+  276  ls
+  277  cd Downloads/
+  278  ls
+  279  unzip T3-main.zip 
+  280  cd T3-main/
+  281  ls
+  282  mkdir bonded
+  283  cd ..
+  284  mk bonded
+  285  mkdir bonded
+  286  cd bonded
+  287  cd T3-main/
+  288  ls
+  289  vmd nvt.pdb
+  290  vi nvt.pdb
+  291  gmx distance -f r.xtc
+  292  cd bonded
+  293  cd downloads
+  294  ls
+  295  cd Downloads/
+  296  cd bonded
+  297  cd T3-main/
+  298  clear
+  299  ls
+  300  vi bond.ndx
+  301  vmd bond.ndx
+  302  ls
+  303  vmd nvt.tpr
+  304  ls
+  305  vi r1234.top
+  306  ls
+  307  cd Downloads
+  308  cd
+  309  cd Downloads
+  310  cd ..
+  311  cd Downloads
+  312  ls
+  313  cd 2kzi.pdb
+  314  cd
+  315  ls
+  316  gmx pdb2gmx -f 2kzi.pdb -o protein_processed.gro -p topol.top -water spce
+  317  gmx pdb2gmx -f 2kzi.pdb -o protein_processed.gro -p topol.top -water spce -ignh
+  318  gmx editconf -f clean.pdb -o boxed.gro -c -d 1.0 -bt cubic
+  319  ls -1
+  320  gmx pdb2gmx -f 2kzi.pdb -o protein_processed.gro  -p topol.top -water spce
+  321  ls
+  322  gmx editconf -f protein_processed.gro  -o boxed.gro -c -d 1.0 -bt cubic
+  323  gmx solvate -cp boxed.gro -cs spc216.gro -o solvated.gro -p topol.top
+  324  history
+  325  gmx solvate -cp boxed.gro -cs spc216.gro -o solvated.gro -p topol.top
+  326  gmx pdb2gmx -f 2kzi.pdb -o protein_processed.gro -p topol.top -water spce
+  327  gmx pdb2gmx -f 2kzi.pdb -o protein_processed.gro -p topol.top -water spce -ignh
+  328  gmx pdb2gmx -f 2kzi.pdb -o clean.pdb -p topol.top -water spce
+  329  gmx pdb2gmx -f 2kzi.pdb -o clean.pdb -p topol.top -water spce -ignh
+  330  gmx editconf -f clean.pdb  -o boxed.gro -c -d 1.0 -bt cubic
+  331  gmx grompp -f ions.mdp -c solvated.gro -p topol.top -o ions.tpr
+  332  ls
+  333  vi ions.mdp
+  334  gmx grompp -f ions.mdp -c solvated.gro -p topol.top -o ions.tpr
+  335  gmx solvate -cp boxed.gro -cs spc216.gro -o solvated.gro -p topol.top
+  336  gmx grompp -f ions.mdp -c solvated.gro -p topol.top -o ions.tpr
+  337  gmx genion -s ions.tpr -o neutralized.gro -p topol.top -pname NA -nname CL -neutral
+  338  vi topol.top
+  339  history
+  340  vmd nvt.tpr input/2kzi.pdb
+  341  vmd nvt.tpr input/2kzi.pdb 2kzi.pdb
+  342  gmx genion -s ions.tpr -o neutralized.gro -p topol.top -pname NA -nname CL -neutral
+  343  vmd neutralized.gro
+  344  vmd nvt.tpr input/2kzi.pdb 2kzi.pdb
+  345  vmd -f md.gro md.xtc
+  346  gmx trjconv -s md.tpr -f md.xtc -o new_md.gro -dump 0
+  347  ls
+  348  vmd solvated.gro
+  349  vmd neutralized.gro
+  350  sudo apt update
+  351  sudo apt install git
+  352  git config --global user.name "Your Name"
+  353  git config --global user.email "your-email@example.com"
+  354  history
+  355  ls
+  356  mkdir Affibody
+  357  ls
+  358  cd Affibody/
+  359  cp ../2kzi.pdb .
+  360  ls
+  361  cp ../boxed.gro .
+  362  cp ../solvated.gro ../clean.pdb ../ions.mdp ../topol.top ../ions.tpr ../mdout.mdp ../neutralized.gro ../porse.itp ../protein_processed.gro . 
+  363  cp ../solvated.gro ../clean.pdb ../ions.mdp ../topol.top ../ions.tpr ../mdout.mdp ../neutralized.gro ../protein_processed.gro . 
+  364  ls
+  365  git init
+  366  apt install gitr
+  367  apt install git
+  368  cd ..
+  369  history
+  370  cd Affibody/
+  371  history > history.txt
